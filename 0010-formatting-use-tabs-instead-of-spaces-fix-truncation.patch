@@ -1,0 +1,31 @@
+From 8b181b37887947e54f873104d184ac6ad550b676 Mon Sep 17 00:00:00 2001
+From: r0h4ck <r0h4cker@gmail.com>
+Date: Sun, 24 Oct 2021 12:58:03 +0300
+Subject: [PATCH 10/10] formatting: use tabs instead of spaces fix truncation
+ error
+
+---
+ calculator.cpp | 11 +++++++++++
+ 1 file changed, 11 insertions(+)
+ create mode 100644 calculator.cpp
+
+diff --git a/calculator.cpp b/calculator.cpp
+new file mode 100644
+index 0000000..d10f529
+--- /dev/null
++++ b/calculator.cpp
+@@ -0,0 +1,11 @@
++#include "calculator.h"
++
++int Calculator::Add (double a, double b)
++{
++	return a + b + 0.5;
++}
++
++int Calculator::Sub (double a, double b)
++{
++	return Add (a, -b);
++}
+-- 
+2.33.0
+
