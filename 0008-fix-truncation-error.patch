@@ -1,0 +1,30 @@
+From ca2973415da3e7f409546cb89b56857c1eb9e5d6 Mon Sep 17 00:00:00 2001
+From: r0h4ck <r0h4cker@gmail.com>
+Date: Sun, 24 Oct 2021 12:54:00 +0300
+Subject: [PATCH 08/10] fix truncation error
+
+---
+ calculator/calculator.cpp | 11 +++++++++++
+ 1 file changed, 11 insertions(+)
+ create mode 100644 calculator/calculator.cpp
+
+diff --git a/calculator/calculator.cpp b/calculator/calculator.cpp
+new file mode 100644
+index 0000000..d10f529
+--- /dev/null
++++ b/calculator/calculator.cpp
+@@ -0,0 +1,11 @@
++#include "calculator.h"
++
++int Calculator::Add (double a, double b)
++{
++	return a + b + 0.5;
++}
++
++int Calculator::Sub (double a, double b)
++{
++	return Add (a, -b);
++}
+-- 
+2.33.0
+
